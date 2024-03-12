@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .footer {
+    width: 85%;
+    height: 200px;
+    /* Ligne horizontale */
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    /* Flexbox pour aligner les éléments horizontalement avec un espace entre eux */
+    display: flex;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      h1 {
+        font-size: 2.6rem;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  /* Ajout de la hauteur pour centrer verticalement */
+  .wrapper {
+    width: 85%; /* Ajout de la largeur pour occuper toute la largeur de .container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    padding-bottom: 60px; /* Ajout de padding pour l'espace autour du contenu */
+    h2 {
+      font-family: var(--primary-font);
+    }
+    a {
+      font-weight: 800;
+    }
+  }
+
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 60px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center; /* Pour centrer horizontalement */
+    align-items: center; /* Pour centrer verticalement */
+  }
+  .button {
+    padding-top: 100px;
+  }
+}
