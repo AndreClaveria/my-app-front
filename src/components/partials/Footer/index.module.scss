@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   .footer {
+    position: sticky; /* Positionnement fixe */
+    bottom: 0; /* Positionnement en bas de la page */
+
     width: 85%;
     height: 200px;
     /* Ligne horizontale */

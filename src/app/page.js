@@ -25,7 +25,7 @@ export default async function Home() {
         buttonText="Discover"
       />
       <GridPosts articles={articles} />
-      <NewsLetter></NewsLetter>
+      <NewsLetter />
       <Slider />
     </div>
   );

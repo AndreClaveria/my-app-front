@@ -1,21 +1,96 @@
-.wrapper {
-    overflow: hidden;
-    border-radius: 200px;
-    width: 300px;
-    margin: 50px auto;
-}
-
-.slider {
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centrer horizontalement le contenu */
+  align-items: center;
+  height: 75vh;
+  .wrapper {
+    width: 85%;
     display: flex;
-    gap: 50px;
-    position: relative;
-    width: 100%;
-    width: 3000px;
-    transition: 0.3s all;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    .titleWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35%;
 
-.slide {
-    width: 500px;
-    height: 500px;
-    background: lightgray;
+      .title {
+        font-size: 60px;
+        font-family: var(--primary-font);
+        font-weight: 900;
+        color: var(--main-color);
+      }
+      .line {
+        width: 35%;
+        border-top: 12px solid var(--main-color);
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+      p {
+        width: 100%;
+        .bold {
+          font-weight: 800;
+        }
+
+        .boldnunderline {
+          text-decoration: underline;
+          font-weight: 800;
+        }
+      }
+      button {
+        width: 25%;
+        padding: 10px 10px;
+      }
+    }
+
+    .silderWrapper {
+      overflow: hidden;
+      border-radius: 200px;
+      width: 300px;
+      margin: 50px auto;
+      .slider {
+        display: flex;
+        position: relative;
+        width: 2000px;
+        transition: 0.3s all;
+      }
+
+      .slide1 {
+        width: 500px;
+        height: 300px;
+        background: rgb(102, 27, 27);
+      }
+      .slide2 {
+        width: 500px;
+        height: 300px;
+        background: rgb(233, 124, 124);
+      }
+      .slide3 {
+        width: 500px;
+        height: 300px;
+        background: rgb(216, 13, 13);
+      }
+      .slide4 {
+        width: 500px;
+        height: 300px;
+        background: rgb(226, 161, 161);
+      }
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px; /* Espacement entre le slider et les boutons de navigation */
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
 }
